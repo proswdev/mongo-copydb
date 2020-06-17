@@ -1,0 +1,38 @@
+{
+  "name": "mongo-copydb",
+  "version": "1.0.0",
+  "description": "Copy mongodb database from one mongod instance to same or other instance",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "coverage": "nyc mocha",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/proswdev/mongo-copydb.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongod",
+    "mongodb",
+    "copydb",
+    "copydatabase",
+    "copy"
+  ],
+  "author": "Eric Vandewater <ericv@prosoftwaredev.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/proswdev/mongo-copydb/issues"
+  },
+  "homepage": "https://github.com/proswdev/mongo-copydb",
+  "devDependencies": {
+    "bluebird": "^3.7.2",
+    "coveralls": "^3.1.0",
+    "mocha": "^8.0.1",
+    "mongodb": "^3.5.9",
+    "nyc": "^15.1.0",
+    "should": "^13.2.3"
+  }
+}
