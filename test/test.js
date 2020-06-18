@@ -82,7 +82,7 @@ describe("copydb", () => {
 
   it ('should create identical copy of a database without a user', async () => {
     await createTestDb(fromDb);
-    await copydb(fromDb, toDb, { username: 'eric', password: 'test' });
+    await copydb(fromDb, toDb);
     let db = client.db(toDb);
     await verifyDb(db);
   });
