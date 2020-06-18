@@ -32,7 +32,11 @@ async function createTestDb(name, username, password) {
   let db = client.db(name);
   await db.dropDatabase();
   if (username) {
-    db.removeUser(username);
+    try {
+      await db.removeUser(username);
+    } catch(err) {
+      // Ignore error if user doesn't exist
+    }
     await db.addUser(username, password, {
       roles: [ { role: 'read', db: name }]
     });

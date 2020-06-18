@@ -30,7 +30,7 @@
   "devDependencies": {
     "bluebird": "^3.7.2",
     "coveralls": "^3.1.0",
-    "mocha": "^8.0.1",
+    "mocha": "7",
     "mongodb": "^3.5.9",
     "nyc": "^15.1.0",
     "should": "^13.2.3"
