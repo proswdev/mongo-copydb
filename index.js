@@ -12,6 +12,6 @@ module.exports = (from, to, {fromhost, tohost, username, password}={}) => {
   }
   username = username ? '--username=' + username : '';
   password = password ? '--password=' + password : '';
-  let cmd = `mongodump --archive ${fromhost} ${username} ${password} --db=${from} | mongorestore --archive ${tohost} --nsFrom='${from}.*' --nsTo='${to}.*'`
+  let cmd = `mongodump --archive ${fromhost} ${username} ${password} --db=${from} --quiet | mongorestore --archive ${tohost} --nsFrom='${from}.*' --nsTo='${to}.*' --quiet`
   return exec(cmd);
 }
