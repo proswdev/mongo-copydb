@@ -1,6 +1,6 @@
 {
   "name": "mongo-copydb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Copy mongodb database from one mongod instance to same or other instance",
   "main": "index.js",
   "scripts": {
